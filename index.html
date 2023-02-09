@@ -12,17 +12,24 @@
 
 <body>
 
-    <form>
-        <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Correo Electronico</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <div id="contenedor">
+        <div id="central">
+            <div id="login">
+                <div class="titulo">
+                    Bienvenido
+                </div>
+                <form id="loginform">
+                    <input type="text" name="usuario" placeholder="Usuario" required>
+                    
+                    <input type="password" placeholder="Contraseña" name="password" required>
+                    <br>
+                    <center><a class="btn btn-primary" href="html/contactos.html"
+                        role="button">Login</a></center>
+                    
+                </form>
+            </div>
         </div>
-        <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
-        </div>
-        <a class="btn btn-primary" href="html/contactos.html" role="button">Login</a>
-    </form>
+    </div>
 
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>
