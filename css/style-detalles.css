@@ -22,13 +22,13 @@ body {
 }
 
 #central {
-    max-width: 320px;
+    max-width: 550px;
     width: 100%;
 }
 
 .titulo {
     font-size: 250%;
-    color: #FDB500;
+    color: #38a034;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -128,4 +128,13 @@ body {
 
 .inferior a:hover {
     color: #3282b8;
+}
+
+#info:hover {
+    background-color: #3282b8;
+    border-radius: 10px;
+}
+
+.txt {
+    color: white;
 }
