@@ -1,61 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="../css/style-contactos.css">
-    <title>Contactos</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/style-contactos.css">
+  <title>Contactos</title>
 </head>
+
 <body>
-    <a class="btn btn-light" href="../index.html" role="button">Regresar</a>
+  <a class="btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample"
+    style="font-size: 20px; color: white;">
+    <img src="../img/configuraciones.png" alt="NotFound"> Configuraciones
+  </a>
 
-    <table class="table table-dark table-striped" style="text-align: center;">
-        <thead>
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">First</th>
-            <th scope="col">Last</th>
-            <th scope="col">Handle</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-          </tr>
-          <tr>
-            <th scope="row">4</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-          </tr>
-          <tr>
-            <th scope="row">5</th>
-            <td rol="button" href="detallesContacto.html">Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-          </tr>
-        </tbody>
-      </table>
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header" style="background-color: #2C3034; color: white;">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Configuraciones </h5>
+      <button type="button" class="btn-close btn-close-white text-reset " data-bs-dismiss="offcanvas"
+        aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body" style="background-color: #2C3034;">
+      <div id="config">
 
-      <a class="btn btn-light" href="nuevoContacto.html" role="button" style="border-radius: 20px;">Agregar Nuevo Contacto</a>
+        <a class="navbar-brand; btn" style="padding-left: 40px; font-size: 30px; color: white;"
+          href="perfilUsuario.html">
+          <img src="../img/usuario.png" alt="NotFound"> Perfil</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <script src="../js/bootstrap.bundle.min.js"></script>
+      </div>
+      <br>
+      <br>
+      <div id="config">
+
+        <a class="navbar-brand, btn" style="padding-left: 40px; font-size: 30px; color: white;" href="toDoList.html">
+          <img src="../img/que-hacer.png" alt="NotFound"> To Do</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+      </div>
+      <br>
+      <br>
+      <div id="config">
+
+        <a class="navbar-brand; btn" style="padding-left: 40px; font-size: 30px; color: white;" href="favoritos.html">
+          <img src="../img/favorito.png" alt="NotFound"> Favoritos</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+      </div>
+      <br>
+      <br>
+      <div id="config">
+
+        <a class="navbar-brand; btn" style="padding-left: 40px; font-size: 30px; color: white;" href="../index.html">
+          <img src="../img/cerrar-sesion.png" alt="NotFound"> Log Out</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <br>
+  <br>
+
+  <div class="container" style="text-align: center">
+    <div class="row">
+  
+      <div class="row col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+  
+        <div class="card col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+          <img src="../img/phoenix.jpg" class="card-img-top" alt="Card image" />
+  
+          <div class="card-block">
+            <h4 class="card-title">Phoenix Wright</h4>
+            <p class="card-text">Each merged squad salts the wild porter. Should the charmed church dodge a camera? The gown litters the rhyme. Another discrete elevator defects over the target.</p>
+            <a href="../html/detallesContacto.html" class="btn" style="color: black; font-size: 20px;">Revisar</a>
+          </div>
+        </div>
+  
+        <div class="card col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+          <img src="../img/drfate.jpg" class="card-img-top" alt="Card image" />
+  
+          <div class="card-block">
+            <h4 class="card-title">Dr.Fate</h4>
+            <p class="card-text">Each merged squad salts the wild porter. Should the charmed church dodge a camera? The gown litters the rhyme. Another discrete elevator defects over the target.</p>
+            <a href="../html/detallesContacto.html" class="btn" style="color: black; font-size: 20px;">Revisar</a>
+          </div>
+        </div>
+  
+        <div class="card col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 .img-fluid">
+          <img src="../img/kanamori.png" class="card-img-top" alt="Card image" />
+  
+          <div class="card-block">
+            <h4 class="card-title">This is a title</h4>
+            <p class="card-text">Each merged squad salts the wild porter. Should the charmed church dodge a camera? The gown litters the rhyme. Another discrete elevator defects over the target.</p>
+            <a href="../html/detallesContacto.html" class="btn" style="color: black; font-size: 20px;">Revisar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br>
+
+  <div class="container" style="text-align: center;">
+    <div class="row">
+  
+      <div class="row col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+  
+        <div class="card col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+          <img src="../img/Gappy.png" class="card-img-top" alt="Card image" />
+  
+          <div class="card-block">
+            <h4 class="card-title">This is a title</h4>
+            <p class="card-text">Each merged squad salts the wild porter. Should the charmed church dodge a camera? The gown litters the rhyme. Another discrete elevator defects over the target.</p>
+            <a href="../html/detallesContacto.html" class="btn" style="color: black; font-size: 20px;">Revisar</a>
+          </div>
+        </div>
+  
+        <div class="card col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+          <img src="../img/oscar.jpg" class="card-img-top" alt="Card image" />
+  
+          <div class="card-block">
+            <h4 class="card-title">This is a title</h4>
+            <p class="card-text">Each merged squad salts the wild porter. Should the charmed church dodge a camera? The gown litters the rhyme. Another discrete elevator defects over the target.</p>
+            <a href="../html/detallesContacto.html" class="btn" style="color: black; font-size: 20px;">Revisar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div id="section-cta">
+    <div class="container">
+      <a href="nuevoContacto.html" class="button" style="border-radius: 10px;">Nuevo Contacto</a>
+    </div>
+  </div>
+
+  <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
